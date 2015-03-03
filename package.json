@@ -1,0 +1,21 @@
+{
+  "name": "ashot",
+  "version": "0.1.0",
+  "author": "j0tunn <j0tunn@ya.ru>",
+  "homepage": "https://github.com/j0tunn/ashot/",
+  "bugs": {
+    "url": "https://github.com/j0tunn/ashot/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/j0tunn/ashot.git"
+  },
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "nan": "~1.7.0"
+  },
+  "scripts": {
+  },
+  "license": "MIT"
+}
