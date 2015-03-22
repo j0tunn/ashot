@@ -1,3 +1,1 @@
-var getScreenshot = require('./build/Release/ashot').getScreenshot;
-
-getScreenshot();
+module.exports = require('./build/Release/ashot');

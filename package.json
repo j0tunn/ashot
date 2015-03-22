@@ -10,12 +10,13 @@
     "type": "git",
     "url": "git://github.com/j0tunn/ashot.git"
   },
-  "description": "",
-  "main": "index.js",
+  "description": "OS X Application screenshot utility",
   "dependencies": {
     "nan": "~1.7.0"
   },
-  "scripts": {
+  "main": "index.js",
+  "directories": {
+    "bin": "./bin"
   },
   "license": "MIT"
 }

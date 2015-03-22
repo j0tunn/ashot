@@ -9,14 +9,12 @@
       "include_dirs": [
         "<!(node -e \"require('nan')\")",
       ]
-
-      # ,
-      # "link_settings": {
-      #   "libraries": [
-      #     "-framework Carbon",
-      #     "-framework CoreFoundation"
-      #   ]
-      # }
+      ,
+      "link_settings": {
+        "libraries": [
+          "-framework Cocoa"
+        ]
+      }
     }
   ]
 }

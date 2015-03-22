@@ -1,0 +1,26 @@
+#!/usr/bin/env node
+
+var getScreenshot = require('../').getScreenshot,
+    fs = require('fs');
+
+if(process.argv.length < 4) {
+    console.error('Two arguments expected: application name and destination file');
+    process.exit(1);
+}
+
+var appName = process.argv[2],
+    dstFile = process.argv[3];
+
+getScreenshot(appName, function(error, result) {
+    if(error) {
+        console.log('Error:', error);
+        return;
+    }
+
+    fs.writeFile(dstFile, result, function(err) {
+        if(err) {
+            console.log('Cant write file', err);
+        }
+    });
+});
+
